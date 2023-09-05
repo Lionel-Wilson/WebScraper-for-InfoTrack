@@ -1,21 +1,32 @@
-using WebScrapper.Services;
+using WebScrapper.Services.Services;
+using System.Threading.Tasks;
 
 namespace WebScrapper.Tests
 {
     public class WebScrapperSearchTests
     {
-        private _searchService;
+        private SearchService _searchService;
         [SetUp]
         public void Setup()
         {
+            _searchService = new SearchService();
         }
 
         [Test]
-        [TestCase("land registry search", "Google")];
-        [TestCase("land registry search", "Bing")];
-        public async void Should_Be_Able_To_Search_Web_Via_Search_Engine(string keywords, string url)
+        //[TestCase("land registry search", "Google")]
+        [TestCase("infotrack", "Google")]
+        public async Task Should_Be_Able_To_Search_Web_Via_Search_Engine(string keywords, string url)
         {
-            await Assert.IsNotNull()
+            var result = new List<int>();
+            
+            result = _searchService.WebScrapper(keywords, url);
+
+     
+            for (int i = 0; i < result.Count; i++)
+            {
+                Console.WriteLine(result[i]);
+            }
+            Assert.IsNotEmpty(result);
         }
     }
 }

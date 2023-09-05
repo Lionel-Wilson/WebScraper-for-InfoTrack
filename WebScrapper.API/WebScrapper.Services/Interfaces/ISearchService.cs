@@ -2,6 +2,6 @@
 {
     public interface ISearchService
     {
-        string? WebScrapper(string keywords, string url);
+        List<int>? WebScrapper(string keywords, string url);
     }
 }
