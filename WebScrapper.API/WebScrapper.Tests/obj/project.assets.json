@@ -381,6 +381,19 @@
             "related": ".xml"
           }
         }
+      },
+      "WebScrapper.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/WebScrapper.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebScrapper.Services.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -975,6 +988,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "WebScrapper.Services/1.0.0": {
+      "type": "project",
+      "path": "../WebScrapper.Services/WebScrapper.Services.csproj",
+      "msbuildProject": "../WebScrapper.Services/WebScrapper.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -983,6 +1001,7 @@
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.6.1",
       "NUnit3TestAdapter >= 4.4.2",
+      "WebScrapper.Services >= 1.0.0",
       "coverlet.collector >= 3.2.0"
     ]
   },
@@ -1018,7 +1037,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\WebScrapper.API\\WebScrapper.Services\\WebScrapper.Services.csproj": {
+              "projectPath": "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\WebScrapper.API\\WebScrapper.Services\\WebScrapper.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
