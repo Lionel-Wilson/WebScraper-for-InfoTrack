@@ -4,9 +4,12 @@ namespace WebScrapper.API.Controllers
 {
     public class SearchController : Controller
     {
-        public IActionResult Index()
+        [HttpGet("Search")]
+        public string SearchWeb([FromBody] string keywords, string url)
         {
-            return View();
+            return "test";
         }
     }
+
 }
+
