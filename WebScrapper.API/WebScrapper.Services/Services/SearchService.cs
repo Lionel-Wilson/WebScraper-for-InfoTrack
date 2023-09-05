@@ -22,10 +22,15 @@ namespace WebScrapper.Services.Services
           
                         httpClient.DefaultRequestHeaders.Add("Cookie", "CONSENT=YES+42");
                         string response = HttpUtility.HtmlDecode(httpClient.GetStringAsync(searchUrl).Result);
+                        
+                        //Extract links and create Ranking List
                         var links = extractLinksFromResponse(response);
                         var rankingList = (from link in links where link.Contains("www.infotrack.co.uk", StringComparison.OrdinalIgnoreCase) select links.IndexOf(link)).Distinct().ToList();
+                        rankingList = convertToRankedList(rankingList);
 
-         
+
+
+
                         return rankingList;
                     }
                     else
@@ -69,6 +74,28 @@ namespace WebScrapper.Services.Services
             }
 
             return links;
+        }
+
+        private List<int> convertToRankedList(List<int> listOfIndexes)
+        {
+            List<int> rankedList = new List<int>(); 
+            if (listOfIndexes.Count >0)
+            {
+                // Increase each number in the list by 1
+                for (int i = 0; i < listOfIndexes.Count; i++)
+                {
+                    listOfIndexes[i] += 1;
+                }
+                rankedList = listOfIndexes;
+
+                return rankedList;
+            }
+            else
+            {
+                rankedList = new List<int>() { 0 };
+                return rankedList;
+            }
+
         }
     }
     }
