@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SXE4LSIFDzWcbsNb1/IJ+RNLRVR9MaaE8wNoItC1gmdvm+SWx2VM/mIA7Rs6u7D0FAb0JKkejemIG5US5d17eA==",
+  "dgSpecHash": "sRHLU3kl8cBZX2NXjbJl/tLOA85AdJRO6lcNb3HgxOm7r8gn6L3IyBWLqmTMIhpKiJbQESsj8UHWzrI5AV/JAA==",
   "success": true,
-  "projectFilePath": "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\WebScrapper\\WebScrapper.Tests\\WebScrapper.Tests.csproj",
+  "projectFilePath": "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\WebScrapper.API\\WebScrapper.Tests\\WebScrapper.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lione\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\Lione\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",
