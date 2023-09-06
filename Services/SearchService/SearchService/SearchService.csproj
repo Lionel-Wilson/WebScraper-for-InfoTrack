@@ -11,6 +11,9 @@
     <Description>A Search Service created for my interview take-home project given to me by Infotrack.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/Lionel-Wilson/WebScraper-for-InfoTrack/tree/main/Services/SearchService</RepositoryUrl>
+    <PackageTags>Infotrack, Search Service, Lionel Wilson</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

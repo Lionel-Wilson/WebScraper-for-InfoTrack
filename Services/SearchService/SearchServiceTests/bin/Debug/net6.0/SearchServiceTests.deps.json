@@ -8,12 +8,13 @@
     ".NETCoreApp,Version=v6.0": {
       "SearchServiceTests/1.0.0": {
         "dependencies": {
+          "Infotrack.Lionel.Mock.SearchService": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.5.0",
           "NUnit": "3.13.3",
           "NUnit.Analyzers": "3.6.1",
           "NUnit3TestAdapter": "4.4.2",
-          "SearchService": "1.0.0",
-          "coverlet.collector": "3.2.0"
+          "coverlet.collector": "3.2.0",
+          "SearchService": "1.0.0.0"
         },
         "runtime": {
           "SearchServiceTests.dll": {}
@@ -317,9 +318,17 @@
       "NUnit.Analyzers/3.6.1": {},
       "NUnit3TestAdapter/4.4.2": {},
       "System.Reflection.Metadata/1.6.0": {},
-      "SearchService/1.0.0": {
+      "Infotrack.Lionel.Mock.SearchService/1.0.0": {
         "runtime": {
           "SearchService.dll": {}
+        }
+      },
+      "SearchService/1.0.0.0": {
+        "runtime": {
+          "SearchService.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -421,8 +430,13 @@
       "path": "system.reflection.metadata/1.6.0",
       "hashPath": "system.reflection.metadata.1.6.0.nupkg.sha512"
     },
-    "SearchService/1.0.0": {
+    "Infotrack.Lionel.Mock.SearchService/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SearchService/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }
