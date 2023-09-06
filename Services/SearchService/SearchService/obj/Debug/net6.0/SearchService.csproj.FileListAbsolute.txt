@@ -1,0 +1,12 @@
+D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\bin\Debug\net6.0\SearchService.deps.json
+D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\bin\Debug\net6.0\SearchService.dll
+D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\bin\Debug\net6.0\SearchService.pdb
+D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\obj\Debug\net6.0\SearchService.csproj.AssemblyReference.cache
+D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\obj\Debug\net6.0\SearchService.GeneratedMSBuildEditorConfig.editorconfig
+D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\obj\Debug\net6.0\SearchService.AssemblyInfoInputs.cache
+D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\obj\Debug\net6.0\SearchService.AssemblyInfo.cs
+D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\obj\Debug\net6.0\SearchService.csproj.CoreCompileInputs.cache
+D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\obj\Debug\net6.0\SearchService.dll
+D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\obj\Debug\net6.0\refint\SearchService.dll
+D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\obj\Debug\net6.0\SearchService.pdb
+D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\obj\Debug\net6.0\ref\SearchService.dll
