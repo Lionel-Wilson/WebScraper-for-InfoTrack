@@ -15,7 +15,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\Services\\SearchService\\SearchService\\SearchService.csproj",
-      "projectName": "SearchService",
+      "projectName": "Infotrack.Lionel.Mock.SearchService",
       "projectPath": "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\Services\\SearchService\\SearchService\\SearchService.csproj",
       "packagesPath": "C:\\Users\\Lione\\.nuget\\packages\\",
       "outputPath": "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\Services\\SearchService\\SearchService\\obj\\",

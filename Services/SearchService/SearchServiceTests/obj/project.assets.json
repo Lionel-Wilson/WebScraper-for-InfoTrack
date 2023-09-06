@@ -382,14 +382,14 @@
           }
         }
       },
-      "SearchService/1.0.0": {
+      "Infotrack.Lionel.Mock.SearchService/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/SearchService.dll": {}
+          "bin/placeholder/Infotrack.Lionel.Mock.SearchService.dll": {}
         },
         "runtime": {
-          "bin/placeholder/SearchService.dll": {}
+          "bin/placeholder/Infotrack.Lionel.Mock.SearchService.dll": {}
         }
       }
     }
@@ -986,7 +986,7 @@
         "version.txt"
       ]
     },
-    "SearchService/1.0.0": {
+    "Infotrack.Lionel.Mock.SearchService/1.0.0": {
       "type": "project",
       "path": "../SearchService/SearchService.csproj",
       "msbuildProject": "../SearchService/SearchService.csproj"
@@ -994,11 +994,11 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Infotrack.Lionel.Mock.SearchService >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.6.1",
       "NUnit3TestAdapter >= 4.4.2",
-      "SearchService >= 1.0.0",
       "coverlet.collector >= 3.2.0"
     ]
   },

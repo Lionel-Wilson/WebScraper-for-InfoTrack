@@ -4,6 +4,13 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>Infotrack.Lionel.Mock.SearchService</PackageId>
+    <Authors>Lionel Wilson</Authors>
+    <Company>$(Authors) Infotrack </Company>
+    <Product>Infotrack$(AssemblyName)</Product>
+    <Description>A Search Service created for my interview take-home project given to me by Infotrack.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
