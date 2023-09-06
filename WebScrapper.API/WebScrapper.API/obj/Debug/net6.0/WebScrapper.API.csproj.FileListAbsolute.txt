@@ -30,3 +30,4 @@ D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview 
 D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\WebScrapper.API\WebScrapper.API\obj\Debug\net6.0\WebScrapper.API.pdb
 D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\WebScrapper.API\WebScrapper.API\obj\Debug\net6.0\WebScrapper.API.genruntimeconfig.cache
 D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\WebScrapper.API\WebScrapper.API\obj\Debug\net6.0\ref\WebScrapper.API.dll
+D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\WebScrapper.API\WebScrapper.API\bin\Debug\net6.0\SearchService.dll

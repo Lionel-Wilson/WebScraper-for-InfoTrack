@@ -1,13 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SearchService.Implementations;
+using SearchService.Interfaces;
 
 namespace WebScrapper.API.Controllers
 {
     public class SearchController : Controller
     {
-        [HttpGet("Search")]
-        public string SearchWeb([FromBody] string keywords, string url)
+        private readonly ISearchService _searchService;
+
+        public SearchController(ISearchService searchService)
         {
-            return "test";
+            _searchService = searchService;
+        }
+
+        [HttpGet("Search")]
+        public List<int>? SearchWeb([FromQuery] string keywords, string url)
+        {
+            return _searchService.WebScrapper(keywords, url);
         }
     }
 
