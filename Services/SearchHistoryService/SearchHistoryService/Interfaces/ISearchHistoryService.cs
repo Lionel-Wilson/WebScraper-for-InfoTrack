@@ -8,5 +8,6 @@ namespace SearchHistoryService.Interfaces
 {
     internal interface ISearchHistoryService
     {
+
     }
 }

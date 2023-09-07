@@ -1,11 +1,36 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Infotrack.Lionel.Mock.SearchService/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SearchService.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/SearchService.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Infotrack.Lionel.Mock.SearchService/1.0.0": {
+      "sha512": "ir9vUDk9dXd1j3BkLFihvcVHBVOuo9gJRoNAyGokvWlNVYoRk/Zh5EQIXxAWuz/vRddxRvgB0ggUtuyAJE007A==",
+      "type": "package",
+      "path": "infotrack.lionel.mock.searchservice/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "infotrack.lionel.mock.searchservice.1.0.0.nupkg.sha512",
+        "infotrack.lionel.mock.searchservice.nuspec",
+        "lib/net6.0/SearchService.dll"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Infotrack.Lionel.Mock.SearchService >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Lione\\.nuget\\packages\\": {},
@@ -51,6 +76,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "Infotrack.Lionel.Mock.SearchService": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

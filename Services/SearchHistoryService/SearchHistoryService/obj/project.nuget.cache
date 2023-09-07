@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gEffREeiGbbd0w8JwXBExCHFGMLKUS4FkRAUblHaW+Bu43/gD49x1O/yNun+B2caUvT3WLXGqimj4dSgJ95WiQ==",
+  "dgSpecHash": "SAUYR0WXD9oRofdxlwCVkCMQFjUaloJE6QxyQxl7iU9GG2WZANi0p0rHkVtUqTeeqa6IKEJ3fpmAZdipJ3COsg==",
   "success": true,
   "projectFilePath": "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\Services\\SearchHistoryService\\SearchHistoryService\\SearchHistoryService.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Lione\\.nuget\\packages\\infotrack.lionel.mock.searchservice\\1.0.0\\infotrack.lionel.mock.searchservice.1.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
