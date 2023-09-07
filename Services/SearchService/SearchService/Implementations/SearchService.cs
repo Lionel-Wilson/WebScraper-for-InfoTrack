@@ -1,41 +1,36 @@
 ﻿using System.Text.RegularExpressions;
 using System.Web;
+using SearchService.Data;
 using SearchService.Interfaces;
+using SearchService.Models;
 
 namespace SearchService.Implementations
 {
     public class SearchService: ISearchService
     {
-        public List<int>? WebScrapper(string keywords, string searchEngineId)
+        public List<int>? WebScrapper(string keywords, int searchEngineId)
         {
             try
             {
+                SearchEngine searchEngine = getSearchEnginebyId(searchEngineId);
                 using (HttpClient httpClient = new HttpClient())
                 {
-                    if (searchEngineId == "Google")
-                    {
-                        var keywordsToSearchFor = keywordFormatter(keywords);
-                        var baseUrl = "https://www.google.co.uk/search?num=100&q="; //Todo - Make Search Engine Model
-                        var searchUrl = baseUrl + keywordsToSearchFor;
+ 
+                    var keywordsToSearchFor = keywordFormatter(keywords);
+                    var baseUrl = searchEngine.BaseUrl;
+                    var searchUrl = baseUrl + keywordsToSearchFor;
 
-                        //Make search request
-                        httpClient.DefaultRequestHeaders.Add("Cookie", "CONSENT=YES+42");
-                        string response = HttpUtility.HtmlDecode(httpClient.GetStringAsync(searchUrl).Result);
+                    //Make search request
+                    httpClient.DefaultRequestHeaders.Add("Cookie", searchEngine.HeaderValue);
+                    string response = HttpUtility.HtmlDecode(httpClient.GetStringAsync(searchUrl).Result);
 
-                        //Extract links and create Ranking List
-                        var links = extractLinksFromResponse(response);
-                        var rankingList = (from link in links where link.Contains("www.infotrack.co.uk", StringComparison.OrdinalIgnoreCase) select links.IndexOf(link)).Distinct().ToList();
-                        rankingList = convertToRankedList(rankingList);
+                    //Extract links and create Ranking List
+                    var links = extractLinksFromResponse(searchEngine, response);
+                    var rankingList = (from link in links where link.Contains("www.infotrack.co.uk", StringComparison.OrdinalIgnoreCase) select links.IndexOf(link)).Distinct().ToList();
+                    rankingList = convertToRankedList(rankingList);
 
-
-
-
-                        return rankingList;
-                    }
-                    else
-                    {
-                        return null;
-                    }
+                    return rankingList;
+            
                 }
 
             }
@@ -47,17 +42,26 @@ namespace SearchService.Implementations
 
         }
 
+        private SearchEngine getSearchEnginebyId(int searchEngineId)
+        {
+            using SearchServiceContext searchServiceContext = new SearchServiceContext();
+
+            var searchEngine = searchServiceContext.SearchEngines.Where(searchEngine => searchEngine.Id == searchEngineId).First();
+            
+            return searchEngine;
+        }
+
         private string keywordFormatter(string keyword)
         {
             return keyword.Replace(" ", "+");
         }
 
-        private List<string> extractLinksFromResponse(string response) //To-do add pattern as a parameter after you make the models.
+        private List<string> extractLinksFromResponse(SearchEngine searchEngine,string response) //To-do add pattern as a parameter after you make the models.
         {
             List<string> links = new List<string>();
 
             // Define the regular expression pattern to match URLs
-            string pattern = @"/url\?q=(.*?)&sa=U&ved=";
+            string pattern = @$"{searchEngine.RegexPattern}";
 
             // Create a regular expression object
             Regex regex = new Regex(pattern);
