@@ -14,7 +14,7 @@ namespace WebScrapper.API.Controllers
         }
 
         [HttpGet("Search")]
-        public List<int>? SearchWeb([FromQuery] string keywords, string searchEngineId)
+        public List<int>? SearchWeb([FromQuery] string keywords, int searchEngineId)
         {
             return _searchService.WebScrapper(keywords, searchEngineId);
         }

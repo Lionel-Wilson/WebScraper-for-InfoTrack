@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "SearchService/1.1.0": {
+      "SearchService/1.2.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.Design": "7.0.10",
@@ -703,7 +703,7 @@
     }
   },
   "libraries": {
-    "SearchService/1.1.0": {
+    "SearchService/1.2.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
