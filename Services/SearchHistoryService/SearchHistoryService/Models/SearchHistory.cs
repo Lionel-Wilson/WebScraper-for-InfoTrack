@@ -12,7 +12,7 @@ namespace SearchHistoryService.Models
         public int Id { get; set; }
 
         public string Keywords { get; set; }
-        public string SearchEngineId { get; set; }
+        public int SearchEngineId { get; set; }
         public SearchEngine SearchEngine { get; set; } = null!;
 
         public string Ranking { get; set; }

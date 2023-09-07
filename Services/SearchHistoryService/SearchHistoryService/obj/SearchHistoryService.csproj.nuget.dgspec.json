@@ -5,10 +5,10 @@
   },
   "projects": {
     "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\Services\\SearchHistoryService\\SearchHistoryService\\SearchHistoryService.csproj": {
-      "version": "1.0.0",
+      "version": "1.2.0",
       "restore": {
         "projectUniqueName": "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\Services\\SearchHistoryService\\SearchHistoryService\\SearchHistoryService.csproj",
-        "projectName": "SearchHistoryService",
+        "projectName": "Infotrack.Lionel.Mock.SearchHistoryService",
         "projectPath": "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\Services\\SearchHistoryService\\SearchHistoryService\\SearchHistoryService.csproj",
         "packagesPath": "C:\\Users\\Lione\\.nuget\\packages\\",
         "outputPath": "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\Services\\SearchHistoryService\\SearchHistoryService\\obj\\",
@@ -47,7 +47,7 @@
           "dependencies": {
             "Infotrack.Lionel.Mock.SearchService": {
               "target": "Package",
-              "version": "[1.1.0, )"
+              "version": "[1.3.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
