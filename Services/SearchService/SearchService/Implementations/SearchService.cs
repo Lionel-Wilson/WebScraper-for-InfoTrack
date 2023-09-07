@@ -6,13 +6,13 @@ namespace SearchService.Implementations
 {
     public class SearchService: ISearchService
     {
-        public List<int>? WebScrapper(string keywords, string url)
+        public List<int>? WebScrapper(string keywords, string searchEngineId)
         {
             try
             {
                 using (HttpClient httpClient = new HttpClient())
                 {
-                    if (url == "Google")
+                    if (searchEngineId == "Google")
                     {
                         var keywordsToSearchFor = keywordFormatter(keywords);
                         var baseUrl = "https://www.google.co.uk/search?num=100&q="; //Todo - Make Search Engine Model
