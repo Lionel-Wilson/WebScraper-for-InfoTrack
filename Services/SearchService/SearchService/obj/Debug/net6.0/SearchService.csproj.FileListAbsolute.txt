@@ -10,3 +10,5 @@ D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview 
 D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\obj\Debug\net6.0\refint\SearchService.dll
 D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\obj\Debug\net6.0\SearchService.pdb
 D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\obj\Debug\net6.0\ref\SearchService.dll
+D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\bin\Debug\net6.0\SearchService.runtimeconfig.json
+D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\obj\Debug\net6.0\SearchService.genruntimeconfig.cache

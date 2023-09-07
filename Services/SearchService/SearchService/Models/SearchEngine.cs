@@ -13,6 +13,6 @@ namespace SearchService.Models
         public string Name { get; set; }    
         public string BaseUrl { get; set; }
 
-        public string? regexPattern { get; set; } 
+        public string? RegexPattern { get; set; } 
     }
 }
