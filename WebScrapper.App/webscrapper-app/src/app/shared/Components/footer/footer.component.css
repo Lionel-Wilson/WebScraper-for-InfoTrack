@@ -1,0 +1,293 @@
+
+.footer__upper{
+    -webkit-font-smoothing: antialiased;
+    --spacing: 30px;
+    --spacing-section: 90px;
+    --container-gutter: 15px;
+    --header-height: 90px;
+    --container-max-width: 1300px;
+    box-sizing: inherit;
+    margin: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: #0696B7;
+    color: #FFFFFF;
+    padding: var(--spacing-section) 0;
+}
+
+.container{
+    -webkit-font-smoothing: antialiased;
+    --spacing: 30px;
+    --spacing-section: 90px;
+    --container-gutter: 15px;
+    --header-height: 90px;
+    --container-max-width: 1300px;
+    color: #FFFFFF;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: var(--container-max-width);
+    padding-left: var(--container-gutter);
+    padding-right: var(--container-gutter);
+    position: relative;
+}
+
+.footer__upper__logo{
+    -webkit-font-smoothing: antialiased;
+    --spacing: 30px;
+    --spacing-section: 90px;
+    --container-gutter: 15px;
+    --header-height: 90px;
+    --container-max-width: 1300px;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    color: inherit;
+    position: absolute;
+    left: var(--container-gutter);
+    top: 0;
+    text-decoration: none;
+}
+
+.footer__upper__links{
+    -webkit-font-smoothing: antialiased;
+    --spacing: 30px;
+    --spacing-section: 90px;
+    --container-gutter: 15px;
+    --header-height: 90px;
+    --container-max-width: 1300px;
+    color: #FFFFFF;
+    box-sizing: inherit;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    display: flex;
+    margin: var(--spacing-section) -15px 0 -15px;
+    margin-left: 242px;
+    margin-top: 0;
+}
+
+.list-links{
+    -webkit-font-smoothing: antialiased;
+    --spacing: 30px;
+    --spacing-section: 90px;
+    --container-gutter: 15px;
+    --header-height: 90px;
+    --container-max-width: 1300px;
+    color: #FFFFFF;
+    box-sizing: inherit;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    flex: 1;
+    margin: 0 15px;
+}
+
+.list-links__title{
+    -webkit-font-smoothing: antialiased;
+    --spacing: 30px;
+    --spacing-section: 90px;
+    --container-gutter: 15px;
+    --header-height: 90px;
+    --container-max-width: 1300px;
+    color: #FFFFFF;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-weight: 700;
+    font-family: "Lato",sans-serif;
+}
+
+.list-links__links{
+    -webkit-font-smoothing: antialiased;
+    --spacing: 30px;
+    --spacing-section: 90px;
+    --container-gutter: 15px;
+    --header-height: 90px;
+    --container-max-width: 1300px;
+    color: #FFFFFF;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font-size: 1.6rem;
+    margin-top: 5px;
+}
+
+
+.footer__upper__contact{
+    -webkit-font-smoothing: antialiased;
+    --spacing: 30px;
+    --spacing-section: 90px;
+    --container-gutter: 15px;
+    --header-height: 90px;
+    --container-max-width: 1300px;
+    color: #FFFFFF;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    margin-top: var(--spacing-section);
+    padding-top: var(--spacing-section);
+    position: relative;
+    display: flex;
+    margin-right: -15px;
+    margin-left: 242px;
+}
+
+.footer__upper__contact__detail{
+    -webkit-font-smoothing: antialiased;
+    --spacing: 30px;
+    --spacing-section: 90px;
+    --container-gutter: 15px;
+    --header-height: 90px;
+    --container-max-width: 1300px;
+    color: #FFFFFF;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    flex: 1;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: calc(25% - 30px);
+}
+
+.address{
+    -webkit-font-smoothing: antialiased;
+    --spacing: 30px;
+    --spacing-section: 90px;
+    --container-gutter: 15px;
+    --header-height: 90px;
+    --container-max-width: 1300px;
+    color: #FFFFFF;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+strong{
+    -webkit-font-smoothing: antialiased;
+    --spacing: 30px;
+    --spacing-section: 60px;
+    --container-gutter: 15px;
+    --header-height: 90px;
+    --container-max-width: 720px;
+    color: #FFFFFF;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 14px;
+    vertical-align: baseline;
+    font-weight: 700;
+    font-family: "Lato",sans-serif;
+}
+
+ul{
+    -webkit-font-smoothing: antialiased;
+    --spacing: 30px;
+    --spacing-section: 60px;
+    --container-gutter: 15px;
+    --header-height: 90px;
+    --container-max-width: 720px;
+    color: #FFFFFF;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    list-style: none;
+}
+
+li{
+    -webkit-font-smoothing: antialiased;
+    --spacing: 30px;
+    --spacing-section: 60px;
+    --container-gutter: 15px;
+    --header-height: 90px;
+    --container-max-width: 720px;
+    color: #FFFFFF;
+    list-style: none;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+a{
+    -webkit-font-smoothing: antialiased;
+    --spacing: 30px;
+    --spacing-section: 60px;
+    --container-gutter: 15px;
+    --header-height: 90px;
+    --container-max-width: 720px;
+    list-style: none;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 16px;
+    vertical-align: baseline;
+    color: inherit;
+    text-decoration: none;
+}
+img{
+    -webkit-font-smoothing: antialiased;
+    --spacing: 30px;
+    --spacing-section: 90px;
+    --container-gutter: 15px;
+    --header-height: 90px;
+    --container-max-width: 1300px;
+    color: inherit;
+    aspect-ratio: auto 2000 / 2000;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: top;
+    height: 52.13px;
+    width: 141px;
+}
