@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,  } from '@angular/core';
 
 @Component({
   selector: 'app-search-history',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./search-history.component.css']
 })
 export class SearchHistoryComponent {
+  constructor() { }
+
+
+
 
 }
