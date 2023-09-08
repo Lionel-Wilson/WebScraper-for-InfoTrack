@@ -46,7 +46,7 @@
           }
         }
       },
-      "Infotrack.Lionel.Mock.SearchHistoryService/1.4.0": {
+      "Infotrack.Lionel.Mock.SearchHistoryService/1.5.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.10",
@@ -1210,14 +1210,14 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
-    "Infotrack.Lionel.Mock.SearchHistoryService/1.4.0": {
-      "sha512": "T1JDdGAeW7ArFt4XFQrjjGIs1D5e3mRz+NwwftRT184au9u6dDluRDDWdGBOp0J7KKmjDw1S95ZzijbFXuf82g==",
+    "Infotrack.Lionel.Mock.SearchHistoryService/1.5.0": {
+      "sha512": "XNHZfub1mMrn6mO62GhpP1VyDgRxKT16y9xHAHm7QSF3mZ7kv5NKMBJLFtq0sJCgz1Gf3Sre2/QLdhJFILZ+PQ==",
       "type": "package",
-      "path": "infotrack.lionel.mock.searchhistoryservice/1.4.0",
+      "path": "infotrack.lionel.mock.searchhistoryservice/1.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "infotrack.lionel.mock.searchhistoryservice.1.4.0.nupkg.sha512",
+        "infotrack.lionel.mock.searchhistoryservice.1.5.0.nupkg.sha512",
         "infotrack.lionel.mock.searchhistoryservice.nuspec",
         "lib/net6.0/SearchHistoryService.dll",
         "lib/net6.0/SearchHistoryService.runtimeconfig.json"
@@ -3705,7 +3705,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Infotrack.Lionel.Mock.SearchHistoryService >= 1.4.0",
+      "Infotrack.Lionel.Mock.SearchHistoryService >= 1.5.0",
       "Infotrack.Lionel.Mock.SearchService >= 1.5.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -3758,7 +3758,7 @@
         "dependencies": {
           "Infotrack.Lionel.Mock.SearchHistoryService": {
             "target": "Package",
-            "version": "[1.4.0, )"
+            "version": "[1.5.0, )"
           },
           "Infotrack.Lionel.Mock.SearchService": {
             "target": "Package",

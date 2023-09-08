@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "WebScrapper.API/1.0.0": {
         "dependencies": {
-          "Infotrack.Lionel.Mock.SearchHistoryService": "1.4.0",
+          "Infotrack.Lionel.Mock.SearchHistoryService": "1.5.0",
           "Infotrack.Lionel.Mock.SearchService": "1.5.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
@@ -50,21 +50,21 @@
           }
         }
       },
-      "Infotrack.Lionel.Mock.SearchHistoryService/1.4.0": {
+      "Infotrack.Lionel.Mock.SearchHistoryService/1.5.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10"
         },
         "runtime": {
           "lib/net6.0/SearchHistoryService.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
           }
         }
       },
       "Infotrack.Lionel.Mock.SearchService/1.5.0": {
         "dependencies": {
-          "Infotrack.Lionel.Mock.SearchHistoryService": "1.4.0",
+          "Infotrack.Lionel.Mock.SearchHistoryService": "1.5.0",
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10"
         },
@@ -706,12 +706,12 @@
       "path": "azure.identity/1.6.0",
       "hashPath": "azure.identity.1.6.0.nupkg.sha512"
     },
-    "Infotrack.Lionel.Mock.SearchHistoryService/1.4.0": {
+    "Infotrack.Lionel.Mock.SearchHistoryService/1.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-T1JDdGAeW7ArFt4XFQrjjGIs1D5e3mRz+NwwftRT184au9u6dDluRDDWdGBOp0J7KKmjDw1S95ZzijbFXuf82g==",
-      "path": "infotrack.lionel.mock.searchhistoryservice/1.4.0",
-      "hashPath": "infotrack.lionel.mock.searchhistoryservice.1.4.0.nupkg.sha512"
+      "sha512": "sha512-XNHZfub1mMrn6mO62GhpP1VyDgRxKT16y9xHAHm7QSF3mZ7kv5NKMBJLFtq0sJCgz1Gf3Sre2/QLdhJFILZ+PQ==",
+      "path": "infotrack.lionel.mock.searchhistoryservice/1.5.0",
+      "hashPath": "infotrack.lionel.mock.searchhistoryservice.1.5.0.nupkg.sha512"
     },
     "Infotrack.Lionel.Mock.SearchService/1.5.0": {
       "type": "package",

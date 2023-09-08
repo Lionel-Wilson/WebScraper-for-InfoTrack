@@ -10,6 +10,7 @@ namespace WebScrapper.API.Controllers
      
         private readonly ISearchHistoryService _searchHistoryService;
 
+
         public SearchHistoryController(ISearchHistoryService searchHistoryService)
         {
             _searchHistoryService = searchHistoryService;

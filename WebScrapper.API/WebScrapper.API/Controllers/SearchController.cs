@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SearchService.Implementations;
 using SearchService.Interfaces;
 
 namespace WebScrapper.API.Controllers
