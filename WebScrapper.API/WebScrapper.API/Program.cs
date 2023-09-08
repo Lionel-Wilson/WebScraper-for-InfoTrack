@@ -9,6 +9,17 @@ builder.Services.AddTransient<ISearchService, SearchService.Implementations.Sear
 
 builder.Services.AddTransient<SearchHistoryService.Implementations.SearchHistoryService>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+
+
 
 
 builder.Services.AddControllers();
@@ -17,6 +28,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.UseCors();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

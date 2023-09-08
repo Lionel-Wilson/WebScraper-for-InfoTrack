@@ -13,13 +13,13 @@
       </p>
     </div>
     <div class="col-md-10 mx-auto col-lg-5">
-      <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+      <div class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
         <div class="form-floating mb-3">
           <input
-            type="email"
             class="form-control"
             id="floatingInput"
-            placeholder="name@example.com"
+            placeholder="InfoTrack"
+            [(ngModel)]="searchTerms"
           />
           <label for="floatingInput">Insert search terms here...</label>
         </div>
@@ -29,12 +29,15 @@
           <option value="2">Bing</option>
         </select>
         <div class="checkbox mb-3"></div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">
+        <button
+          class="w-100 btn btn-lg btn-primary"
+          (click)="searchWeb(searchTerms, 1)"
+        >
           Search
         </button>
         <hr class="my-4" />
-        <p class="text-body-secondary result-text">Results show here</p>
-      </form>
+        <p class="text-body-secondary result-text">{{ resultsText }}</p>
+      </div>
     </div>
   </div>
 </div>
