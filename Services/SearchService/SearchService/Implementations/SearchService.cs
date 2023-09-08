@@ -4,6 +4,7 @@ using SearchService.Data;
 using SearchService.Interfaces;
 using SearchService.Models;
 using SearchHistoryService.Implementations;
+using SearchHistoryService.Interfaces;
 
 
 namespace SearchService.Implementations
