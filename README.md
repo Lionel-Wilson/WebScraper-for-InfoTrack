@@ -18,14 +18,15 @@ appears in the first 100 results.
 ### 1. Database(Microsoft SQL Server Management Studio)
 
 - Run the below SQL Query to create the DB Schema and insert the initial Data:
-  CREATE TABLE [dbo].[SearchEngine] (
-  [Id] INT IDENTITY(1,1) NOT NULL,
-  [BaseUrl] NVARCHAR(MAX) NOT NULL,
-  [HeaderValue] NVARCHAR(MAX) NULL,
-  [Name] NVARCHAR(MAX) NOT NULL,
-  [RegexPattern] NVARCHAR(MAX) NULL,
-  PRIMARY KEY ([Id])
-  );
+
+CREATE TABLE [dbo].[SearchEngine] (
+[Id] INT IDENTITY(1,1) NOT NULL,
+[BaseUrl] NVARCHAR(MAX) NOT NULL,
+[HeaderValue] NVARCHAR(MAX) NULL,
+[Name] NVARCHAR(MAX) NOT NULL,
+[RegexPattern] NVARCHAR(MAX) NULL,
+PRIMARY KEY ([Id])
+);
 
 CREATE TABLE [dbo].[SearchHistories] (
 [Id] INT NOT NULL IDENTITY,
