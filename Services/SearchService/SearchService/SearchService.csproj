@@ -14,10 +14,11 @@
     <RepositoryUrl>https://github.com/Lionel-Wilson/WebScraper-for-InfoTrack/tree/main/Services/SearchService</RepositoryUrl>
     <PackageTags>Infotrack, Search Service, Lionel Wilson</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	 <VersionPrefix>1.3.0</VersionPrefix>
+	 <VersionPrefix>1.6.0</VersionPrefix>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Infotrack.Lionel.Mock.SearchHistoryService" Version="1.4.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.10">
       <PrivateAssets>all</PrivateAssets>

@@ -1,20 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace SearchService.Models
+namespace SearchService.Models;
+
+public partial class SearchEngine
 {
-    public class SearchEngine
-    {
-        public int Id { get; set; }
+    public int Id { get; set; }
 
-        public string Name { get; set; }    
-        public string BaseUrl { get; set; }
+    public string Name { get; set; } = null!;
 
-        public string? RegexPattern { get; set; }
+    public string BaseUrl { get; set; } = null!;
 
-        public string? HeaderValue { get; set; }
-    }
+    public string? RegexPattern { get; set; }
+
+    public string? HeaderValue { get; set; }
+
 }

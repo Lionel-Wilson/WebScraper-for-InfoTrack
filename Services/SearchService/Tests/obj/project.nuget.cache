@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "7S8KPDkri+a1ryWE0WV59QlrXBI9jYHsNru/Ca47e72n/GyNYbXZfkGNrzz9D8iEivSfdZOkcHFeooMLtg7GUQ==",
+  "dgSpecHash": "c3j9S47dOKxyCNH70ORpKfB5ecIZusfe2pV1O9pmUWWx/yjcPCNZQsf1EVR4p6qy/qJ/f9a/GKJ94FOQHr+Qqw==",
   "success": true,
   "projectFilePath": "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\Services\\SearchService\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lione\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Lione\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Lione\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
+    "C:\\Users\\Lione\\.nuget\\packages\\infotrack.lionel.mock.searchhistoryservice\\1.4.0\\infotrack.lionel.mock.searchhistoryservice.1.4.0.nupkg.sha512",
     "C:\\Users\\Lione\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Lione\\.nuget\\packages\\microsoft.codecoverage\\17.7.2\\microsoft.codecoverage.17.7.2.nupkg.sha512",
     "C:\\Users\\Lione\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -77,8 +78,7 @@
     "C:\\Users\\Lione\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
     "C:\\Users\\Lione\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\Lione\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\Lione\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512",
-    "C:\\Users\\Lione\\.nuget\\packages\\infotrack.lionel.mock.searchservice\\1.3.0\\infotrack.lionel.mock.searchservice.1.3.0.nupkg.sha512"
+    "C:\\Users\\Lione\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

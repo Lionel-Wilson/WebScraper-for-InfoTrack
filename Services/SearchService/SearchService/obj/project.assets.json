@@ -59,6 +59,23 @@
           }
         }
       },
+      "Infotrack.Lionel.Mock.SearchHistoryService/1.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10"
+        },
+        "compile": {
+          "lib/net6.0/SearchHistoryService.dll": {
+            "related": ".runtimeconfig.json"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SearchHistoryService.dll": {
+            "related": ".runtimeconfig.json"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -1213,6 +1230,19 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Infotrack.Lionel.Mock.SearchHistoryService/1.4.0": {
+      "sha512": "T1JDdGAeW7ArFt4XFQrjjGIs1D5e3mRz+NwwftRT184au9u6dDluRDDWdGBOp0J7KKmjDw1S95ZzijbFXuf82g==",
+      "type": "package",
+      "path": "infotrack.lionel.mock.searchhistoryservice/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "infotrack.lionel.mock.searchhistoryservice.1.4.0.nupkg.sha512",
+        "infotrack.lionel.mock.searchhistoryservice.nuspec",
+        "lib/net6.0/SearchHistoryService.dll",
+        "lib/net6.0/SearchHistoryService.runtimeconfig.json"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -3504,6 +3534,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Infotrack.Lionel.Mock.SearchHistoryService >= 1.4.0",
       "Microsoft.EntityFrameworkCore >= 7.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.10",
@@ -3515,7 +3546,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.3.0",
+    "version": "1.6.0",
     "restore": {
       "projectUniqueName": "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\Services\\SearchService\\SearchService\\SearchService.csproj",
       "projectName": "Infotrack.Lionel.Mock.SearchService",
@@ -3555,6 +3586,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Infotrack.Lionel.Mock.SearchHistoryService": {
+            "target": "Package",
+            "version": "[1.4.0, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[7.0.10, )"

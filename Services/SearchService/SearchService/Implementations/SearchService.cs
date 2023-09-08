@@ -3,11 +3,21 @@ using System.Web;
 using SearchService.Data;
 using SearchService.Interfaces;
 using SearchService.Models;
+using SearchHistoryService.Implementations;
+
 
 namespace SearchService.Implementations
 {
+  
     public class SearchService: ISearchService
     {
+        private readonly SearchHistoryService.Implementations.SearchHistoryService _searchHistoryService;
+
+        public SearchService(SearchHistoryService.Implementations.SearchHistoryService searchHistoryService)
+        {
+            _searchHistoryService = searchHistoryService;
+        }
+
         public List<int>? WebScrapper(string keywords, int searchEngineId)
         {
             try
@@ -15,7 +25,6 @@ namespace SearchService.Implementations
                 SearchEngine searchEngine = getSearchEnginebyId(searchEngineId);
                 using (HttpClient httpClient = new HttpClient())
                 {
- 
                     var keywordsToSearchFor = keywordFormatter(keywords);
                     var baseUrl = searchEngine.BaseUrl;
                     var searchUrl = baseUrl + keywordsToSearchFor;
@@ -29,8 +38,13 @@ namespace SearchService.Implementations
                     var rankingList = (from link in links where link.Contains("www.infotrack.co.uk", StringComparison.OrdinalIgnoreCase) select links.IndexOf(link)).Distinct().ToList();
                     rankingList = convertToRankedList(rankingList);
 
+                    //Add search to History
+                    _searchHistoryService.addToSearchHistory(keywords, searchEngineId, convertIntegersToString(rankingList));
+
+
+
                     return rankingList;
-            
+
                 }
 
             }
@@ -44,11 +58,27 @@ namespace SearchService.Implementations
 
         private SearchEngine getSearchEnginebyId(int searchEngineId)
         {
-            using SearchServiceContext searchServiceContext = new SearchServiceContext();
+            using SearchDbContext searchServiceContext = new SearchDbContext();
 
             var searchEngine = searchServiceContext.SearchEngines.Where(searchEngine => searchEngine.Id == searchEngineId).First();
-            
+
             return searchEngine;
+        }
+
+        public static string convertIntegersToString(List<int> integers)
+        {
+            if (integers.Count > 0)
+            {
+                // Use LINQ to join the integers with commas and create the string
+                string result = string.Join(",", integers);
+
+                return result;
+            }
+            else
+            {
+                return integers.First().ToString();
+            }
+
         }
 
         private string keywordFormatter(string keyword)
@@ -101,4 +131,5 @@ namespace SearchService.Implementations
 
         }
     }
+   
 }

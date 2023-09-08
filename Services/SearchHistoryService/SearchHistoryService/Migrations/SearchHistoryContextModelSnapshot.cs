@@ -46,47 +46,7 @@ namespace SearchHistoryService.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SearchEngineId");
-
                     b.ToTable("SearchHistories");
-                });
-
-            modelBuilder.Entity("SearchService.Models.SearchEngine", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("BaseUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("HeaderValue")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("RegexPattern")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("SearchEngine");
-                });
-
-            modelBuilder.Entity("SearchHistoryService.Models.SearchHistory", b =>
-                {
-                    b.HasOne("SearchService.Models.SearchEngine", "SearchEngine")
-                        .WithMany()
-                        .HasForeignKey("SearchEngineId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("SearchEngine");
                 });
 #pragma warning restore 612, 618
         }

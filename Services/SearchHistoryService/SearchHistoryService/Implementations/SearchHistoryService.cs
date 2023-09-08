@@ -1,7 +1,5 @@
 ﻿using SearchHistoryService.Data;
 using SearchHistoryService.Models;
-using SearchService.Data;
-using SearchService.Models;
 
 namespace SearchHistoryService.Implementations
 {
@@ -20,22 +18,22 @@ namespace SearchHistoryService.Implementations
 
         public void addToSearchHistory(string keywords, int searchEngineId, string ranking)
         {
-            using SearchHistoryContext searchHistoryContext = new SearchHistoryContext();
-
-            SearchHistory newSearchHistory = new SearchHistory()
+            using (var searchHistoryContext = new SearchHistoryContext())
             {
-                Keywords = keywords,
-                SearchEngineId = searchEngineId,
-                Ranking = ranking,
-                SearchDate = DateTime.Now,
+                SearchHistory newSearchHistory = new SearchHistory()
+                {
+                    Keywords = keywords,
+                    SearchEngineId = searchEngineId,
+                    Ranking = ranking,
+                    SearchDate = DateTime.Now,
+                };
 
-            };
-            searchHistoryContext.Add(newSearchHistory);
-            searchHistoryContext.SaveChanges();
-
-
+                searchHistoryContext.Add(newSearchHistory);
+                searchHistoryContext.SaveChanges();
+            }
         }
-        
+
+
 
 
     }

@@ -52,6 +52,23 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
+      "Infotrack.Lionel.Mock.SearchHistoryService/1.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10"
+        },
+        "compile": {
+          "lib/net6.0/SearchHistoryService.dll": {
+            "related": ".runtimeconfig.json"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SearchHistoryService.dll": {
+            "related": ".runtimeconfig.json"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -1414,10 +1431,11 @@
           }
         }
       },
-      "Infotrack.Lionel.Mock.SearchService/1.3.0": {
+      "Infotrack.Lionel.Mock.SearchService/1.6.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Infotrack.Lionel.Mock.SearchHistoryService": "1.4.0",
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10"
         },
@@ -1520,6 +1538,19 @@
         "coverlet-icon.png",
         "coverlet.collector.6.0.0.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "Infotrack.Lionel.Mock.SearchHistoryService/1.4.0": {
+      "sha512": "T1JDdGAeW7ArFt4XFQrjjGIs1D5e3mRz+NwwftRT184au9u6dDluRDDWdGBOp0J7KKmjDw1S95ZzijbFXuf82g==",
+      "type": "package",
+      "path": "infotrack.lionel.mock.searchhistoryservice/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "infotrack.lionel.mock.searchhistoryservice.1.4.0.nupkg.sha512",
+        "infotrack.lionel.mock.searchhistoryservice.nuspec",
+        "lib/net6.0/SearchHistoryService.dll",
+        "lib/net6.0/SearchHistoryService.runtimeconfig.json"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -4171,7 +4202,7 @@
         "version.txt"
       ]
     },
-    "Infotrack.Lionel.Mock.SearchService/1.3.0": {
+    "Infotrack.Lionel.Mock.SearchService/1.6.0": {
       "type": "project",
       "path": "../SearchService/SearchService.csproj",
       "msbuildProject": "../SearchService/SearchService.csproj"
@@ -4179,7 +4210,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Infotrack.Lionel.Mock.SearchService >= 1.3.0",
+      "Infotrack.Lionel.Mock.SearchHistoryService >= 1.4.0",
+      "Infotrack.Lionel.Mock.SearchService >= 1.6.0",
       "Microsoft.NET.Test.Sdk >= 17.7.2",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.6.1",
@@ -4236,6 +4268,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Infotrack.Lionel.Mock.SearchHistoryService": {
+            "target": "Package",
+            "version": "[1.4.0, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.7.2, )"

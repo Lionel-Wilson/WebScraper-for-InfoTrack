@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Infotrack.Lionel.Mock.SearchService</id>
+    <version>1.6.0</version>
+    <authors>Lionel Wilson</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <description>A Search Service created for my interview take-home project given to me by Infotrack.</description>
+    <tags>Infotrack, Search Service, Lionel Wilson</tags>
+    <repository url="https://github.com/Lionel-Wilson/WebScraper-for-InfoTrack/tree/main/Services/SearchService" />
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Infotrack.Lionel.Mock.SearchHistoryService" version="1.4.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="7.0.10" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="7.0.10" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\bin\Debug\net6.0\SearchService.runtimeconfig.json" target="lib\net6.0\SearchService.runtimeconfig.json" />
+    <file src="D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchService\SearchService\bin\Debug\net6.0\SearchService.dll" target="lib\net6.0\SearchService.dll" />
+  </files>
+</package>
