@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SearchService.Interfaces;
+using SearchHistoryService.Interfaces;
+using SearchHistoryService.Models;
 
 namespace WebScrapper.API.Controllers
 {
     public class SearchHistoryController : Controller
     {
-        /*
+     
         private readonly ISearchHistoryService _searchHistoryService;
 
         public SearchHistoryController(ISearchHistoryService searchHistoryService)
@@ -18,6 +20,6 @@ namespace WebScrapper.API.Controllers
         {
             return _searchHistoryService.GetSearchHistory();
         }
-        */
+        
     }
 }

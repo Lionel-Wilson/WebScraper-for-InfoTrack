@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Infotrack.Lionel.Mock.SearchHistoryService</id>
+    <version>1.5.0</version>
+    <title>Infotrack.Lionel.Mock.SearchHistoryService</title>
+    <authors>Lionel Wilson</authors>
+    <projectUrl>https://github.com/Lionel-Wilson/WebScraper-for-InfoTrack/tree/main/Services/SearchHistoryService</projectUrl>
+    <description>A Search History Service created for my interview take-home project given to me by Infotrack.</description>
+    <tags>Infotrack, Search History Service, Lionel Wilson</tags>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Microsoft.EntityFrameworkCore" version="7.0.10" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="7.0.10" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchHistoryService\SearchHistoryService\bin\Debug\net6.0\SearchHistoryService.runtimeconfig.json" target="lib\net6.0\SearchHistoryService.runtimeconfig.json" />
+    <file src="D:\General Files\Self-learning Computer Science\My Projects\InfoLogic Interview Project\WebScrapper\WebScraper-for-InfoTrack\Services\SearchHistoryService\SearchHistoryService\bin\Debug\net6.0\SearchHistoryService.dll" target="lib\net6.0\SearchHistoryService.dll" />
+  </files>
+</package>

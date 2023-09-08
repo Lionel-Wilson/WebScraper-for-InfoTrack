@@ -5,7 +5,7 @@
   },
   "projects": {
     "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\Services\\SearchHistoryService\\SearchHistoryService\\SearchHistoryService.csproj": {
-      "version": "1.4.0",
+      "version": "1.5.0",
       "restore": {
         "projectUniqueName": "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\Services\\SearchHistoryService\\SearchHistoryService\\SearchHistoryService.csproj",
         "projectName": "Infotrack.Lionel.Mock.SearchHistoryService",

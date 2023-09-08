@@ -8,13 +8,13 @@
     ".NETCoreApp,Version=v6.0": {
       "Test/1.0.0": {
         "dependencies": {
-          "Infotrack.Lionel.Mock.SearchHistoryService": "1.4.0",
+          "Infotrack.Lionel.Mock.SearchHistoryService": "1.5.0",
           "Microsoft.NET.Test.Sdk": "17.5.0",
           "NUnit": "3.13.3",
           "NUnit.Analyzers": "3.6.1",
           "NUnit3TestAdapter": "4.4.2",
           "coverlet.collector": "3.2.0",
-          "SearchHistoryService": "1.4.0.0"
+          "SearchHistoryService": "1.5.0.0"
         },
         "runtime": {
           "Test.dll": {}
@@ -913,7 +913,7 @@
           }
         }
       },
-      "Infotrack.Lionel.Mock.SearchHistoryService/1.4.0": {
+      "Infotrack.Lionel.Mock.SearchHistoryService/1.5.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10"
@@ -922,11 +922,11 @@
           "SearchHistoryService.dll": {}
         }
       },
-      "SearchHistoryService/1.4.0.0": {
+      "SearchHistoryService/1.5.0.0": {
         "runtime": {
           "SearchHistoryService.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
           }
         }
       }
@@ -1456,12 +1456,12 @@
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
-    "Infotrack.Lionel.Mock.SearchHistoryService/1.4.0": {
+    "Infotrack.Lionel.Mock.SearchHistoryService/1.5.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "SearchHistoryService/1.4.0.0": {
+    "SearchHistoryService/1.5.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

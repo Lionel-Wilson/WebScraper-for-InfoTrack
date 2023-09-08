@@ -1,9 +1,10 @@
 ﻿using SearchHistoryService.Data;
+using SearchHistoryService.Interfaces;
 using SearchHistoryService.Models;
 
 namespace SearchHistoryService.Implementations
 {
-    public class SearchHistoryService
+    public class SearchHistoryService: ISearchHistoryService
     {
         
         public List<SearchHistory> GetSearchHistory()

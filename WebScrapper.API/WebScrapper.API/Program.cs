@@ -1,10 +1,13 @@
-using SearchService.Implementations;
+using SearchHistoryService.Interfaces;
+using SearchHistoryService.Implementations;
 using SearchService.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddTransient<ISearchService, SearchService.Implementations.SearchService>();
+builder.Services.AddTransient<ISearchHistoryService, SearchHistoryService.Implementations.SearchHistoryService>();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
