@@ -40,7 +40,7 @@ CONSTRAINT [PK_SearchHistories] PRIMARY KEY ([Id])
 INSERT INTO SearchEngine (Name, BaseUrl,RegexPattern, Headervalue)
 VALUES ('Google', 'https://www.google.co.uk/search?num=100&q=', '/url?q=(.\*?)&sa=U&ved=','CONSENT=YES+42');
 
-### 2. API(WebScrapper.API)
+### 2. API(Visual Studio)
 
 - cd to the WebScrapper.API folder andopen up the 'WebScrapper.API.sln'
 - Run the solution by clicking 'WebScrapper.API'
