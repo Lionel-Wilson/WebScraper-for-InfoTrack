@@ -15,8 +15,8 @@ export class SearchComponent {
   public searchHistory: Array<SearchHistory> =[];
 
   public searchTerms: string ='' ;
-  public selectedSearchEngineId: number | undefined ;
   public searchEngines : Array<SearchEngine> =[];
+  public selectedSearchEngineId: number = 0;
 
   public resultsText :string = "Results appear here"
 
@@ -26,9 +26,11 @@ export class SearchComponent {
 
   }
 
+
+
   public searchWeb(keywords:string,searchEngineId:number){
 
-    if(keywords && searchEngineId){
+    if(keywords && searchEngineId != 0){
       this.searchService.SearchWeb(keywords,searchEngineId).subscribe(response=>{
         this.ranking = response;
         console.log("this is the ranking:"+this.ranking);
@@ -45,6 +47,12 @@ export class SearchComponent {
   public resultTextProducer( rankingArray:Array<number>,searchEngineId:number,keywords:string) {
     let rankNumber = rankingArray[0];
     let rankNumberPosition = "st";
+    let numberOfResults = rankingArray.length;
+    let timeorTimes = "times"
+    if(numberOfResults == 1){
+      timeorTimes = "time";
+    }
+
     if(rankNumber != 0){
       // Ensure the number is within the valid range
       if (rankNumber < 0 || rankNumber > 100) {
@@ -75,7 +83,7 @@ export class SearchComponent {
       }
       }
         
-        return `www.infotrack.co.uk ranked ${rankNumber}${rankNumberPosition} on ${this.searchEngines.find(engine=> engine.id == searchEngineId)?.name} for the search term "${keywords}"`;
+        return `www.infotrack.co.uk appeared ${numberOfResults} ${timeorTimes} in the top 100 results and ranked ${rankNumber}${rankNumberPosition} on ${this.searchEngines.find(engine=> engine.id == searchEngineId)?.name} for the search term "${keywords}".`;
     }
 
     return `www.infotrack.co.uk didn't rank in the top 100 results for the search term "${keywords}". Looks like we need to work on our SEO.`;
@@ -85,6 +93,7 @@ export class SearchComponent {
   public getSearcEngines(){
     this.searchService.getSearchEngines().subscribe(response=>{
       this.searchEngines = response;
+      this.selectedSearchEngineId = response[0].id;
 
     })
   }

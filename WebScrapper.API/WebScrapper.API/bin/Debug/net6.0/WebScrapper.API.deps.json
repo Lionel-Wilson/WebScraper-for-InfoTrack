@@ -9,7 +9,7 @@
       "WebScrapper.API/1.0.0": {
         "dependencies": {
           "Infotrack.Lionel.Mock.SearchHistoryService": "1.5.0",
-          "Infotrack.Lionel.Mock.SearchService": "1.7.0",
+          "Infotrack.Lionel.Mock.SearchService": "1.8.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
@@ -62,7 +62,7 @@
           }
         }
       },
-      "Infotrack.Lionel.Mock.SearchService/1.7.0": {
+      "Infotrack.Lionel.Mock.SearchService/1.8.0": {
         "dependencies": {
           "Infotrack.Lionel.Mock.SearchHistoryService": "1.5.0",
           "Microsoft.EntityFrameworkCore": "7.0.10",
@@ -70,8 +70,8 @@
         },
         "runtime": {
           "lib/net6.0/SearchService.dll": {
-            "assemblyVersion": "1.7.0.0",
-            "fileVersion": "1.7.0.0"
+            "assemblyVersion": "1.8.0.0",
+            "fileVersion": "1.8.0.0"
           }
         }
       },
@@ -713,12 +713,12 @@
       "path": "infotrack.lionel.mock.searchhistoryservice/1.5.0",
       "hashPath": "infotrack.lionel.mock.searchhistoryservice.1.5.0.nupkg.sha512"
     },
-    "Infotrack.Lionel.Mock.SearchService/1.7.0": {
+    "Infotrack.Lionel.Mock.SearchService/1.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-MhQxMKkVL+VcDQEauFm6g5/8L3P1YO9tgRsHWVhrAXVnyCYjVK/AHc/1Qjrp+HcABenBs9wvvQmk6OnrNMKWQA==",
-      "path": "infotrack.lionel.mock.searchservice/1.7.0",
-      "hashPath": "infotrack.lionel.mock.searchservice.1.7.0.nupkg.sha512"
+      "sha512": "sha512-C/IMbiH0NJBnb2J1QjjURy7sg8PqmP4yI93PMbIO/0Ep94unCqP3INDIiCi5kZTSbXIGcaZVBnyqrbgKmK2BOg==",
+      "path": "infotrack.lionel.mock.searchservice/1.8.0",
+      "hashPath": "infotrack.lionel.mock.searchservice.1.8.0.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",

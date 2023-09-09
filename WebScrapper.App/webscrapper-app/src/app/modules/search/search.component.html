@@ -26,15 +26,16 @@
         <select
           class="form-select"
           aria-label="Default select example"
-          *ngFor="let engines of searchEngines"
+          [(ngModel)]="selectedSearchEngineId"
         >
-          <option selected>{{ engines.name }}</option>
-          <option value="1">Bing needs to be put in DB</option>
+          <option *ngFor="let engines of searchEngines" [ngValue]="engines.id">
+            {{ engines.name }}
+          </option>
         </select>
         <div class="checkbox mb-3"></div>
         <button
           class="w-100 btn btn-lg btn-primary"
-          (click)="searchWeb(searchTerms, 1)"
+          (click)="searchWeb(searchTerms, selectedSearchEngineId)"
         >
           Search
         </button>
