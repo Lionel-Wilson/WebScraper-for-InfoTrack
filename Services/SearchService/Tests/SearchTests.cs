@@ -1,7 +1,7 @@
 using SearchService.Implementations;
 using SearchHistoryService.Implementations;
 using SearchHistoryService.Interfaces;
-
+using SearchService.Models;
 namespace Tests
 {
     public class Tests
@@ -35,6 +35,24 @@ namespace Tests
             }
 
             Assert.IsTrue(result != null && result.Count > 0);
+        }
+
+        [Test]
+        public void Should_Be_Able_To_Get_Search_Engines()
+        {
+            var result = new List<SearchEngine>();
+
+            result = _searchService.getSearchEngines();
+
+            if (result != null && result.Count > 0)
+            {
+                for (int i = 0; i < result.Count; i++)
+                {
+                    Console.WriteLine(result[i].Name);
+                }
+            }
+
+            Assert.IsNotEmpty(result);
         }
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "c3j9S47dOKxyCNH70ORpKfB5ecIZusfe2pV1O9pmUWWx/yjcPCNZQsf1EVR4p6qy/qJ/f9a/GKJ94FOQHr+Qqw==",
+  "dgSpecHash": "vzDGkpZteyzr2Muo810VCyBJ1xB5mdK+93p6dFK8da7GslKtEOxB/tPb4Blh5w9BLrBDDdWtWi7RBvg77kQ71A==",
   "success": true,
   "projectFilePath": "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\Services\\SearchService\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
@@ -78,7 +78,8 @@
     "C:\\Users\\Lione\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
     "C:\\Users\\Lione\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\Lione\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\Lione\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
+    "C:\\Users\\Lione\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Lione\\.nuget\\packages\\infotrack.lionel.mock.searchservice\\1.7.0\\infotrack.lionel.mock.searchservice.1.7.0.nupkg.sha512"
   ],
   "logs": []
 }

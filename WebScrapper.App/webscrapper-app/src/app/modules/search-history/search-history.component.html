@@ -11,11 +11,11 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>1,001</td>
-        <td>random</td>
-        <td>data</td>
-        <td>placeholder</td>
+      <tr *ngFor="let history of searchHistory">
+        <td>{{ history.searchEngineId }}</td>
+        <td>{{ history.keywords }}</td>
+        <td>{{ history.ranking }}</td>
+        <td>{{ history.searchDate }}</td>
       </tr>
     </tbody>
   </table>

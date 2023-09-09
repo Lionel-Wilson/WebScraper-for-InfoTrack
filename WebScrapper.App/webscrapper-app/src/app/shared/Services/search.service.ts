@@ -21,8 +21,12 @@ export class SearchService {
     return this.http.get<Array<number>>(requestUrl);
   }
 
-  getSearchHistory() {
+  public getSearchHistory() {
     return this.http.get<Array<SearchHistory>>(this.SearchServiceBaseUrl+"/History");
+  }
+
+  public getSearchEngines() {
+    return this.http.get<Array<SearchEngine>>(this.SearchServiceBaseUrl+"/SearchEngines");
   }
 
   

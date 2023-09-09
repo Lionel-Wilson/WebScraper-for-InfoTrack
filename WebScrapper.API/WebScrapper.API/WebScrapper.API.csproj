@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Infotrack.Lionel.Mock.SearchHistoryService" Version="1.5.0" />
-    <PackageReference Include="Infotrack.Lionel.Mock.SearchService" Version="1.5.0" />
+    <PackageReference Include="Infotrack.Lionel.Mock.SearchService" Version="1.7.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 

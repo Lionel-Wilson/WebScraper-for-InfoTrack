@@ -39,12 +39,7 @@ export class SearchComponent {
     }
 
   }
-  public getSearchHistory(){
-    this.searchService.getSearchHistory().subscribe(response=>{
-      this.searchHistory = response;
-      console.log("this is the searchHistory:"+this.searchHistory);
-    })
-  }
+
 
   public resultTextProducer( rankingArray:Array<number>,searchEngineId:number) {
 

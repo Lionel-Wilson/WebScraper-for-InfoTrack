@@ -57,6 +57,15 @@ namespace SearchService.Implementations
 
         }
 
+        public List<SearchEngine> getSearchEngines()
+        {
+            using SearchDbContext searchServiceContext = new SearchDbContext();
+
+            var searchEngine = searchServiceContext.SearchEngines.ToList();
+
+            return searchEngine;
+        }
+
         private SearchEngine getSearchEnginebyId(int searchEngineId)
         {
             using SearchDbContext searchServiceContext = new SearchDbContext();
