@@ -13,21 +13,28 @@ export class SearchHistoryComponent {
   public searchEngines: Array<SearchEngine> =[];
 
   constructor(private searchService:SearchService) {
+    this.getSearcEngines();
     this.getSearchHistory();
+
    }
 
   public getSearchHistory(){
     this.searchService.getSearchHistory().subscribe(response=>{
-      this.searchHistory = response;
+      this.searchHistory = response.reverse();
       console.log("this is the searchHistory:");
-      console.log(this.searchHistory);
+      console.log(this.searchEngines);
     })
+  }
+
+  public displaySearchEngineName(searchEngineId:number){
+    return this.searchEngines.find(engine=> engine.id == searchEngineId)?.name
   }
 
   public getSearcEngines(){
     this.searchService.getSearchEngines().subscribe(response=>{
       this.searchEngines = response;
-      console.log("these are the search engines:"+this.searchHistory);
+      console.log("these are the search engines:");
+      console.log(this.searchEngines);
     })
   }
 

@@ -12,7 +12,7 @@
     </thead>
     <tbody>
       <tr *ngFor="let history of searchHistory">
-        <td>{{ history.searchEngineId }}</td>
+        <td>{{ displaySearchEngineName(history.searchEngineId) }}</td>
         <td>{{ history.keywords }}</td>
         <td>{{ history.ranking }}</td>
         <td>{{ formatUserFriendlyDate(history.searchDate) }}</td>
