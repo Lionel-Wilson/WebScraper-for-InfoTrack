@@ -2,6 +2,8 @@ using SearchService.Implementations;
 using SearchHistoryService.Implementations;
 using SearchHistoryService.Interfaces;
 using SearchService.Models;
+using SearchService.Interfaces;
+
 namespace Tests
 {
     public class Tests
@@ -19,6 +21,8 @@ namespace Tests
         [Test]
         [TestCase("land registry search", 1)]
         [TestCase("infotrack", 1)]
+        [TestCase("land registry search", 4)]
+        [TestCase("infotrack", 4)]
         public async Task Should_Be_Able_To_Search_Web_Via_Search_Engine(string keywords, int searchEngineId)
         {
             var result = new List<int>();

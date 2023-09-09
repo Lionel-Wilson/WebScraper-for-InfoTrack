@@ -31,7 +31,10 @@ namespace SearchService.Implementations
                     var searchUrl = baseUrl + keywordsToSearchFor;
 
                     //Make search request
-                    httpClient.DefaultRequestHeaders.Add("Cookie", searchEngine.HeaderValue);
+                    if(searchEngine.HeaderValue != null)
+                    {
+                        httpClient.DefaultRequestHeaders.Add("Cookie", searchEngine.HeaderValue);
+                    }
                     string response = HttpUtility.HtmlDecode(httpClient.GetStringAsync(searchUrl).Result);
 
                     //Extract links and create Ranking List

@@ -78,7 +78,7 @@ export class SearchComponent {
         return `www.infotrack.co.uk ranked ${rankNumber}${rankNumberPosition} on ${this.searchEngines.find(engine=> engine.id == searchEngineId)?.name} for the search term "${keywords}"`;
     }
 
-    return `www.infotrack.co.uk didn't rank for the search term "${keywords}". Looks like we need to work on our SEO.`;
+    return `www.infotrack.co.uk didn't rank in the top 100 results for the search term "${keywords}". Looks like we need to work on our SEO.`;
  
   }
 

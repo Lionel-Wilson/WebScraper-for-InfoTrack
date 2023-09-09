@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "SearchService/1.7.0": {
+      "SearchService/1.8.0": {
         "dependencies": {
           "Infotrack.Lionel.Mock.SearchHistoryService": "1.4.0",
           "Microsoft.EntityFrameworkCore": "7.0.10",
@@ -716,7 +716,7 @@
     }
   },
   "libraries": {
-    "SearchService/1.7.0": {
+    "SearchService/1.8.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
