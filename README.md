@@ -15,9 +15,9 @@ appears in the first 100 results.
 
 ## Screenshots
 
-![image](https://github.com/Lionel-Wilson/WebScraper-for-InfoTrack/assets/80872669/4c94fa98-f024-4fef-9d79-306841e10ecc)
+![image](WebScrapper.App/webscrapper-app/src/assets/Images/productSC1.jpg)
 
-![image](https://github.com/Lionel-Wilson/WebScraper-for-InfoTrack/assets/80872669/bac057f0-eb0c-4e29-8045-da9b88c49647)
+![image](WebScrapper.App/webscrapper-app/src/assets/Images/productSC2.jpg)
 
 ## Dependencies
 Download and install the following:
@@ -59,7 +59,7 @@ VALUES ('Bing', 'https://www.bing.com/search?count=100&q=', 'class="tilk" href="
 
 - cd to the WebScrapper.API folder andopen up the 'WebScrapper.API.sln'
 - Run the solution by clicking 'WebScrapper.API'
-  ![Alt text](image.png)
+![image](WebScrapper.App/webscrapper-app/src/assets/Images/instructionSC1.jpg)
 
 ### 3. Client(Using Angular)
 
