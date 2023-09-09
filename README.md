@@ -13,21 +13,9 @@ string of keywords, and a string URL. This is then processed to return a string 
 resulting URL is found in Google. For example “1, 10, 33” or “0”. The CEO is only interested if their URL
 appears in the first 100 results.
 
-## Usage
+## Usage/Instructions
 
-### Client(Angular)
-
-- cd to WebScrapper.App/webscrapper-app folder.
-- run `npm install` to install all necessary dependencies.
-- `npm start` to start the Angular client
-
-### API(WebScrapper.API)
-
-- cd to the WebScrapper.API folder andopen up the 'WebScrapper.API.sln'
-- Run the solution by clicking 'WebScrapper.API'
-  ![Alt text](image.png)
-
-### Database(Microsoft SQL Server Management Studio)
+### 1. Database(Microsoft SQL Server Management Studio)
 
 - Run the below SQL Query to create the DB Schema and insert the initial Data:
   CREATE TABLE [dbo].[SearchEngine] (
@@ -51,6 +39,17 @@ CONSTRAINT [PK_SearchHistories] PRIMARY KEY ([Id])
 INSERT INTO SearchEngine (Name, BaseUrl,RegexPattern, Headervalue)
 VALUES ('Google', 'https://www.google.co.uk/search?num=100&q=', '/url?q=(.\*?)&sa=U&ved=','CONSENT=YES+42');
 
+### 2. API(WebScrapper.API)
+
+- cd to the WebScrapper.API folder andopen up the 'WebScrapper.API.sln'
+- Run the solution by clicking 'WebScrapper.API'
+  ![Alt text](image.png)
+
+### 3. Client(Angular)
+
+- cd to WebScrapper.App/webscrapper-app folder.
+- run `npm install` to install all necessary dependencies.
+- `npm start` to start the Angular client
 ## API
 
 ### Available routes
