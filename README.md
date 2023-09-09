@@ -19,9 +19,15 @@ appears in the first 100 results.
 
 ![image](https://github.com/Lionel-Wilson/WebScraper-for-InfoTrack/assets/80872669/bac057f0-eb0c-4e29-8045-da9b88c49647)
 
+## Dependencies
+Download and install the following:
+- Angular 16
+- Visual Studio
+- Microsoft SQL Server Management Studio
+
 ## Usage/Instructions
 
-### 1. Database(Microsoft SQL Server Management Studio)
+### 1. Database(Using Microsoft SQL Server Management Studio)
 
 - Run the below SQL Query to create the DB Schema and insert the initial Data:
 
@@ -49,24 +55,28 @@ VALUES ('Google', 'https://www.google.co.uk/search?num=100&q=', '/url?q=(.\*?)&s
 INSERT INTO SearchEngine (Name, BaseUrl,RegexPattern, Headervalue)
 VALUES ('Bing', 'https://www.bing.com/search?count=100&q=', 'class="tilk" href="(.\*?)"',null);
 
-### 2. API(Visual Studio)
+### 2. API(Using Visual Studio)
 
 - cd to the WebScrapper.API folder andopen up the 'WebScrapper.API.sln'
 - Run the solution by clicking 'WebScrapper.API'
   ![Alt text](image.png)
 
-### 3. Client(Angular)
+### 3. Client(Using Angular)
 
 - cd to WebScrapper.App/webscrapper-app folder.
-- run `npm install` to install all necessary dependencies.
+- run `npm install`
 - `npm start` to start the Angular client
+
+### 4. You're now ready to try the app!
 
 ## API
 
 ### Available routes
 
 - /api/Search/?query
+- /api/SearchEngines
 - /api/History
+
 
 ### Query Example
 
