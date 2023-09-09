@@ -13,6 +13,12 @@ string of keywords, and a string URL. This is then processed to return a string 
 resulting URL is found in Google. For example “1, 10, 33” or “0”. The CEO is only interested if their URL
 appears in the first 100 results.
 
+## Screenshots
+![image](https://github.com/Lionel-Wilson/WebScraper-for-InfoTrack/assets/80872669/4c94fa98-f024-4fef-9d79-306841e10ecc)
+
+![image](https://github.com/Lionel-Wilson/WebScraper-for-InfoTrack/assets/80872669/bac057f0-eb0c-4e29-8045-da9b88c49647)
+
+
 ## Usage/Instructions
 
 ### 1. Database(Microsoft SQL Server Management Studio)
