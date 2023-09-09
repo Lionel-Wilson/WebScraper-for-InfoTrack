@@ -3,5 +3,5 @@ export interface SearchHistory {
     keywords:string,
     searchEngineId:string,
     ranking:string,
-    searchDate:Date,
+    searchDate:string,
 }

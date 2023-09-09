@@ -31,6 +31,37 @@ export class SearchHistoryComponent {
     })
   }
 
+  public formatUserFriendlyDate(dateString: string): string {
+    // Parse the input date string into a Date object
+    const date = new Date(dateString);
+  
+    // Check if the date is valid
+    if (isNaN(date.getTime())) {
+      return "Invalid Date";
+    }
+  
+    // Define months and days for formatting
+    const months = [
+      "January", "February", "March", "April",
+      "May", "June", "July", "August",
+      "September", "October", "November", "December"
+    ];
+  
+    // Extract date components
+    const year = date.getFullYear();
+    const month = months[date.getMonth()];
+    const day = date.getDate();
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+  
+    // Format the date string in a user-friendly way
+    const formattedDate = `${month} ${day}, ${year} ${hours}:${minutes}:${seconds}`;
+  
+    return formattedDate;
+  }
+  
+
 
 
 
