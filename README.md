@@ -14,10 +14,10 @@ resulting URL is found in Google. For example “1, 10, 33” or “0”. The CE
 appears in the first 100 results.
 
 ## Screenshots
+
 ![image](https://github.com/Lionel-Wilson/WebScraper-for-InfoTrack/assets/80872669/4c94fa98-f024-4fef-9d79-306841e10ecc)
 
 ![image](https://github.com/Lionel-Wilson/WebScraper-for-InfoTrack/assets/80872669/bac057f0-eb0c-4e29-8045-da9b88c49647)
-
 
 ## Usage/Instructions
 
@@ -46,6 +46,9 @@ CONSTRAINT [PK_SearchHistories] PRIMARY KEY ([Id])
 INSERT INTO SearchEngine (Name, BaseUrl,RegexPattern, Headervalue)
 VALUES ('Google', 'https://www.google.co.uk/search?num=100&q=', '/url?q=(.\*?)&sa=U&ved=','CONSENT=YES+42');
 
+INSERT INTO SearchEngine (Name, BaseUrl,RegexPattern, Headervalue)
+VALUES ('Bing', 'https://www.bing.com/search?count=100&q=', 'class="tilk" href="(.\*?)"',null);
+
 ### 2. API(Visual Studio)
 
 - cd to the WebScrapper.API folder andopen up the 'WebScrapper.API.sln'
@@ -57,6 +60,7 @@ VALUES ('Google', 'https://www.google.co.uk/search?num=100&q=', '/url?q=(.\*?)&s
 - cd to WebScrapper.App/webscrapper-app folder.
 - run `npm install` to install all necessary dependencies.
 - `npm start` to start the Angular client
+
 ## API
 
 ### Available routes

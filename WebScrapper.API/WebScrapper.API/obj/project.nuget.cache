@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "agdzboqHY7aujnEPDZygsr2Y5pG/Mx/4C22eIaSftb/ya83D5h3q0rtz8rKOiTdShYjcutbgKC9oPbisy+MEyg==",
+  "dgSpecHash": "fFMq+b3z0XQ+X/WKZ0kRDgPbOHjBr1MwJjv7dtnFzAexE9utvYZ+/RYn5UQkmBxI9QBk33fAh71ST2a5SyuBQg==",
   "success": true,
   "projectFilePath": "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\WebScrapper.API\\WebScrapper.API\\WebScrapper.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lione\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Lione\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Lione\\.nuget\\packages\\infotrack.lionel.mock.searchhistoryservice\\1.5.0\\infotrack.lionel.mock.searchhistoryservice.1.5.0.nupkg.sha512",
-    "C:\\Users\\Lione\\.nuget\\packages\\infotrack.lionel.mock.searchservice\\1.7.0\\infotrack.lionel.mock.searchservice.1.7.0.nupkg.sha512",
+    "C:\\Users\\Lione\\.nuget\\packages\\infotrack.lionel.mock.searchservice\\1.8.0\\infotrack.lionel.mock.searchservice.1.8.0.nupkg.sha512",
     "C:\\Users\\Lione\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Lione\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Lione\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",
