@@ -32,11 +32,12 @@ Download and install the following:
 ### 1. Database(Using Microsoft SQL Server Management Studio)
 
 - Open up the SearchHistory solution in Visual Studio and open the "Package Manager Console".
+  ![image](WebScrapper.App/webscrapper-app/src/assets/Images/instructionSC2.jpg)
 - Run the command "update-database"
 - Open up the Search solution in Visual Studio and open the "Package Manager Console".
 - Run the command "update-database".
-  ![image](WebScrapper.App/webscrapper-app/src/assets/Images/instructionSC2.jpg)
-- Opem up Micrisoft SQL Server Mangement studio and run the below query:
+
+- Open up Microsoft SQL Server Management studio and run the below query:
 
 INSERT INTO SearchEngine (Name, BaseUrl,RegexPattern, Headervalue) VALUES ('Google', 'https://www.google.co.uk/search?num=100&q=', '/url?q=(.\*?)&sa=U&ved=','CONSENT=YES+42');
 
