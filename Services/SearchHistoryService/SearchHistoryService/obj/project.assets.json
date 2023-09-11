@@ -3515,7 +3515,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.5.0",
+    "version": "1.6.0",
     "restore": {
       "projectUniqueName": "D:\\General Files\\Self-learning Computer Science\\My Projects\\InfoLogic Interview Project\\WebScrapper\\WebScraper-for-InfoTrack\\Services\\SearchHistoryService\\SearchHistoryService\\SearchHistoryService.csproj",
       "projectName": "Infotrack.Lionel.Mock.SearchHistoryService",

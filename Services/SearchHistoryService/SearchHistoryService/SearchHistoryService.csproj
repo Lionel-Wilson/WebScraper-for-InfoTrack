@@ -7,7 +7,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>Infotrack.Lionel.Mock.SearchHistoryService</PackageId>
     <Title>Infotrack.Lionel.Mock.SearchHistoryService</Title>
-	  <VersionPrefix>1.5.0</VersionPrefix>
+	  <VersionPrefix>1.6.0</VersionPrefix>
 	  <Authors>Lionel Wilson</Authors>
 	  <Company>$(Authors) Infotrack</Company>
 	  <Product>Infotrack $(AssemblyName)</Product>

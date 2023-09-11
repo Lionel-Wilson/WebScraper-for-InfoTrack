@@ -20,7 +20,9 @@ appears in the first 100 results.
 ![image](WebScrapper.App/webscrapper-app/src/assets/Images/productSC2.jpg)
 
 ## Dependencies
+
 Download and install the following:
+
 - Angular 16
 - Visual Studio
 - Microsoft SQL Server Management Studio
@@ -31,35 +33,21 @@ Download and install the following:
 
 - Run the below SQL Query to create the DB Schema and insert the initial Data:
 
-CREATE TABLE [dbo].[SearchEngine] (
-[Id] INT IDENTITY(1,1) NOT NULL,
-[BaseUrl] NVARCHAR(MAX) NOT NULL,
-[HeaderValue] NVARCHAR(MAX) NULL,
-[Name] NVARCHAR(MAX) NOT NULL,
-[RegexPattern] NVARCHAR(MAX) NULL,
-PRIMARY KEY ([Id])
-);
+- Open up the SearchHistory solution in Visual Studio and open the "Package Manage Console".
+- Run the command "update-database"
+- Open up the Search solution in Visual Studio and open the "Package Manage Console".
+- Run the command "update-database".
+- Opem up Micrisoft SQL Server Mangement studio and run the below query:
 
-CREATE TABLE [dbo].[SearchHistories] (
-[Id] INT NOT NULL IDENTITY,
-[Keywords] NVARCHAR(MAX) NOT NULL,
-[SearchEngineId] INT NOT NULL,
-[Ranking] NVARCHAR(MAX) NOT NULL,
-[SearchDate] DATETIME2 NOT NULL,
-CONSTRAINT [PK_SearchHistories] PRIMARY KEY ([Id])
-);
+INSERT INTO SearchEngine (Name, BaseUrl,RegexPattern, Headervalue) VALUES ('Google', 'https://www.google.co.uk/search?num=100&q=', '/url?q=(.\*?)&sa=U&ved=','CONSENT=YES+42');
 
-INSERT INTO SearchEngine (Name, BaseUrl,RegexPattern, Headervalue)
-VALUES ('Google', 'https://www.google.co.uk/search?num=100&q=', '/url?q=(.\*?)&sa=U&ved=','CONSENT=YES+42');
-
-INSERT INTO SearchEngine (Name, BaseUrl,RegexPattern, Headervalue)
-VALUES ('Bing', 'https://www.bing.com/search?count=100&q=', 'class="tilk" href="(.\*?)"',null);
+INSERT INTO SearchEngine (Name, BaseUrl,RegexPattern, Headervalue) VALUES ('Bing', 'https://www.bing.com/search?count=100&q=', 'class="tilk" href="(.\*?)"',null);
 
 ### 2. API(Using Visual Studio)
 
 - cd to the WebScrapper.API folder andopen up the 'WebScrapper.API.sln'
 - Run the solution by clicking 'WebScrapper.API'
-![image](WebScrapper.App/webscrapper-app/src/assets/Images/instructionSC1.jpg)
+  ![image](WebScrapper.App/webscrapper-app/src/assets/Images/instructionSC1.jpg)
 
 ### 3. Client(Using Angular)
 
@@ -76,7 +64,6 @@ VALUES ('Bing', 'https://www.bing.com/search?count=100&q=', 'class="tilk" href="
 - /api/Search/?query
 - /api/SearchEngines
 - /api/History
-
 
 ### Query Example
 

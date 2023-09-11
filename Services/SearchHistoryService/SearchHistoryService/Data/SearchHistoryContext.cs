@@ -16,7 +16,7 @@ namespace SearchHistoryService.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=(localdb)\\PracticeProjectsDb;Database=SearchDB;trusted_connection=true;");
+            optionsBuilder.UseSqlServer("server=(localdb)\\SQLEXPRESS;Database=SearchDB;trusted_connection=true;");
         }
 
 
