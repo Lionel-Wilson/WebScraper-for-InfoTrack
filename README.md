@@ -31,11 +31,9 @@ Download and install the following:
 
 ### 1. Database(Using Microsoft SQL Server Management Studio)
 
-- Run the below SQL Query to create the DB Schema and insert the initial Data:
-
-- Open up the SearchHistory solution in Visual Studio and open the "Package Manage Console".
+- Open up the SearchHistory solution in Visual Studio and open the "Package Manager Console".
 - Run the command "update-database"
-- Open up the Search solution in Visual Studio and open the "Package Manage Console".
+- Open up the Search solution in Visual Studio and open the "Package Manager Console".
 - Run the command "update-database".
   ![image](WebScrapper.App/webscrapper-app/src/assets/Images/instructionSC2.jpg)
 - Opem up Micrisoft SQL Server Mangement studio and run the below query:
