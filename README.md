@@ -43,6 +43,8 @@ INSERT INTO SearchEngine (Name, BaseUrl,RegexPattern, Headervalue) VALUES ('Goog
 
 INSERT INTO SearchEngine (Name, BaseUrl,RegexPattern, Headervalue) VALUES ('Bing', 'https://www.bing.com/search?count=100&q=', 'class="tilk" href="(.\*?)"',null);
 
+Note - Connection strings can be found in the ...Context.cs files of the search and searchhistory solutions
+
 ### 2. API(Using Visual Studio)
 
 - cd to the WebScrapper.API folder andopen up the 'WebScrapper.API.sln'
