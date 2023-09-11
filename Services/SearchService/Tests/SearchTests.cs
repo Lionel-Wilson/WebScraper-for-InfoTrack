@@ -21,8 +21,8 @@ namespace Tests
         [Test]
         [TestCase("land registry search", 1)]
         [TestCase("infotrack", 1)]
-        [TestCase("land registry search", 4)]
-        [TestCase("infotrack", 4)]
+        [TestCase("land registry search", 2)]
+        [TestCase("infotrack", 2)]
         public async Task Should_Be_Able_To_Search_Web_Via_Search_Engine(string keywords, int searchEngineId)
         {
             var result = new List<int>();
@@ -42,7 +42,7 @@ namespace Tests
         }
 
         [Test]
-        public void Should_Be_Able_To_Get_Search_Engines()
+        public async Task Should_Be_Able_To_Get_Search_Engines()
         {
             var result = new List<SearchEngine>();
 

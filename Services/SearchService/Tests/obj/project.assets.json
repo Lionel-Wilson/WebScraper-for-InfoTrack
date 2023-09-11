@@ -1431,7 +1431,7 @@
           }
         }
       },
-      "Infotrack.Lionel.Mock.SearchService/1.8.0": {
+      "Infotrack.Lionel.Mock.SearchService/1.9.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -4202,7 +4202,7 @@
         "version.txt"
       ]
     },
-    "Infotrack.Lionel.Mock.SearchService/1.8.0": {
+    "Infotrack.Lionel.Mock.SearchService/1.9.0": {
       "type": "project",
       "path": "../SearchService/SearchService.csproj",
       "msbuildProject": "../SearchService/SearchService.csproj"
@@ -4211,7 +4211,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Infotrack.Lionel.Mock.SearchHistoryService >= 1.4.0",
-      "Infotrack.Lionel.Mock.SearchService >= 1.8.0",
+      "Infotrack.Lionel.Mock.SearchService >= 1.9.0",
       "Microsoft.NET.Test.Sdk >= 17.7.2",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.6.1",

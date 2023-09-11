@@ -15,11 +15,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("A Search Service created for my interview take-home project given to me by Infotr" +
     "ack.")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.8.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.8.0")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.9.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.9.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("InfotrackSearchService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SearchService")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.8.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.9.0.0")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/Lionel-Wilson/WebScraper-for-InfoTrack/tree/main/Services/Sear" +
     "chService")]
 
