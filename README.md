@@ -37,6 +37,7 @@ Download and install the following:
 - Run the command "update-database"
 - Open up the Search solution in Visual Studio and open the "Package Manage Console".
 - Run the command "update-database".
+  ![image](WebScrapper.App/webscrapper-app/src/assets/Images/instructionSC2.jpg)
 - Opem up Micrisoft SQL Server Mangement studio and run the below query:
 
 INSERT INTO SearchEngine (Name, BaseUrl,RegexPattern, Headervalue) VALUES ('Google', 'https://www.google.co.uk/search?num=100&q=', '/url?q=(.\*?)&sa=U&ved=','CONSENT=YES+42');
